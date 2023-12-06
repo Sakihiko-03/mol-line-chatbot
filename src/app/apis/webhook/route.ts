@@ -31,7 +31,7 @@ async function replyText(token: string, texts: string | string[]) {
 
 const handleTextMessage = async (intentText: string, replyToken: string) => {
   switch (intentText) {
-    case 'Menu1 : ติดตามผลจากระบบ e-Tracking':
+    case 'Menu1 : ติดตามสถานะคำขอ':
       await replyText(
         replyToken,
         'สถานะการนำคนต่างด้าวเข้ามามีทั้งหมด 2 คำข้อ\n1. ขอนำคนต่างด้าวเข้ามาตามมาตรา 59 : อยู่ในระหว่างการดำเนินการ\n2. คำขอนำคนต่างด้าวเข้าตามมาตรา 46/1 : อยู่ระหว่างดำเนินการ'
